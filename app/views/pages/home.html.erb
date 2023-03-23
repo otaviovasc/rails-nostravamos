@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/327356669_513399610780197_8030349642319627004_n.png?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeEOOtdd7eQhdWJLvOfPF6QXAEasDbrzCU4ARqwNuvMJTiU_TiKIN3UtNN00a7Sg8A1uwitH6scIPExr0AfhKH_v&_nc_ohc=6VoDO_wzDcAAX9Vwj-p&_nc_ht=scontent-gru2-2.xx&oh=00_AfATQ7jI1maWf1qD08lIvJuMOWstTx4JJZujou45-sg9QA&oe=64215926);">
+  <div class="container">
+    <h1>Seja bem vindo à <strong>Nostravamos</strong></h1>
+    <p>Desde 2009</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
+
+<% @residents.each do |resident| %>
+  <%= resident.name %>
+  <%= resident.course %>
+<% end %>
